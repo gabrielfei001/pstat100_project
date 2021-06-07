@@ -14432,6 +14432,30 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<img src="https://i.guim.co.uk/img/media/7c2ab1a3e60e445caf0a4d3de302591e830e8f7f/0_0_3800_2280/master/3800.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=49331bc571155fab736c3ce179f31770" width="240" height="240" align="center"/>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
 
 
@@ -14495,6 +14519,149 @@ a.anchor-link {
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h2 id="1.-Data-Description">1. Data Description<a class="anchor-link" href="#1.-Data-Description">&#182;</a></h2>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>The data are recorded number of sales in games from year 1980 through 2020 that had sold more than 100,000 copies.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Basic-Information">Basic Information<a class="anchor-link" href="#Basic-Information">&#182;</a></h3>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>The data can be found on <a href="https://www.kaggle.com/arslanali4343/sales-of-video-games">https://www.kaggle.com/arslanali4343/sales-of-video-games</a>. The intention for the collection of the data was not specified by the user who collected the data. In relevance to the source of data, it is known that the data values was web scraped off the website <a href="https://www.vgchartz.com/">https://www.vgchartz.com/</a> using the python library Beautiful Soup, which is known to pull data from HTML or XML documents. The relevant population is the popular games introduced to the game market since 1980 and the sampling mechanism was specifically framed around games that totalled up to more than 100,000 copies sold. Additionally, it is substantial to claim that the scope of inference can be extended to games leaning more towards consoles (data is limited in that it does not contain the entirety of the Steam and other platforms) that are currently out for sale in the game market.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Data-Structure">Data Structure<a class="anchor-link" href="#Data-Structure">&#182;</a></h3>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>For this study, the observational units are popular games published between 1980 and 2017, with the variables consisting of the rank,</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<blockquote> 
+<p>
+    <strong>Table 1</strong>: Variable Descriptions and units for each variable are in the dataset.
+</p>
+</blockquote>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<table>
+<thead><tr>
+<th>Name</th>
+<th>Variable description</th>
+<th>Type</th>
+<th>Units of measurement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rank</td>
+<td>Ranking of Overall Sales</td>
+<td>Numeric</td>
+<td>Rank Numbers</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>Name of The Game</td>
+<td>String</td>
+<td>Game Names</td>
+</tr>
+<tr>
+<td>Platform</td>
+<td>Platform of Game Release</td>
+<td>String</td>
+<td>Game Platforms</td>
+</tr>
+<tr>
+<td>Year</td>
+<td>Year of Game Release</td>
+<td>Numeric</td>
+<td>Calendar Year</td>
+</tr>
+<tr>
+<td>Genre</td>
+<td>Genre of The Game</td>
+<td>String</td>
+<td>Game Genres</td>
+</tr>
+<tr>
+<td>Publisher</td>
+<td>Publisher of The Game</td>
+<td>String</td>
+<td>Game Companies</td>
+</tr>
+<tr>
+<td>NA_Sales</td>
+<td>Total Sales in North America</td>
+<td>Numeric</td>
+<td>in Millions</td>
+</tr>
+<tr>
+<td>EU_Sales</td>
+<td>Total Sales in Europe</td>
+<td>Numeric</td>
+<td>in Millions</td>
+</tr>
+<tr>
+<td>JP_Sales</td>
+<td>Total Sales in Japan</td>
+<td>Numeric</td>
+<td>in Millions</td>
+</tr>
+<tr>
+<td>Other_Sales</td>
+<td>Total Sales in Rest of the World</td>
+<td>Numeric</td>
+<td>in Millions</td>
+</tr>
+<tr>
+<td>Global_Sales</td>
+<td>Total Sales Worldwide</td>
+<td>Numeric</td>
+<td>in Millions</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h2 id="2.-Methods">2. Methods<a class="anchor-link" href="#2.-Methods">&#182;</a></h2>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h2 id="3.-Results">3. Results<a class="anchor-link" href="#3.-Results">&#182;</a></h2>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+<h2 id="4.-Conclusion">4. Conclusion<a class="anchor-link" href="#4.-Conclusion">&#182;</a></h2>
+</div>
 </div>
 </body>
 
